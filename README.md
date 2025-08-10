@@ -32,12 +32,12 @@ A minimal, production-ready authentication starter using **Next.js (App Router)*
 
 ```
 app/
-  page.tsx                  # public home (redirects to /dashboard if logged-in via middleware or page guard)
-  login/page.tsx            # login form (calls /api/auth/login)
-  register/page.tsx         # registration form (calls /api/auth/register)
-  dashboard/page.tsx        # protected page, shows sub + scope and logout
-  dashboard/LogoutButton.tsx
-
+  page.tsx                    # public home (redirects to /dashboard if logged-in via middleware or page guard)
+  (auth)/
+    login/page.tsx            # login form (calls /api/auth/login)
+    register/page.tsx         # registration form (calls /api/auth/register)
+  (main)/
+    dashboard/page.tsx          # protected page, shows sub + scope and logout
   api/auth/
     register/route.ts       # POST register
     login/route.ts          # POST login (issues opaque token; stores hash only)
