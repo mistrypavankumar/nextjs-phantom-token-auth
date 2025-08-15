@@ -144,7 +144,7 @@ export default function RegisterPage() {
                   placeholder="Jane Doe"
                   value={form.name}
                   onChange={onChange("name")}
-                  autoComplete="name"
+                  autoComplete="off"
                 />
                 <svg
                   aria-hidden
@@ -170,7 +170,7 @@ export default function RegisterPage() {
                   placeholder="you@example.com"
                   value={form.email}
                   onChange={onChange("email")}
-                  autoComplete="email"
+                  autoComplete="off"
                   required
                 />
                 <svg
@@ -197,7 +197,7 @@ export default function RegisterPage() {
                   placeholder="••••••••"
                   value={form.password}
                   onChange={onChange("password")}
-                  autoComplete="new-password"
+                  autoComplete="off"
                   required
                   aria-describedby="pw-hint"
                 />
@@ -263,7 +263,7 @@ export default function RegisterPage() {
                   placeholder="••••••••"
                   value={form.confirmPassword}
                   onChange={onChange("confirmPassword")}
-                  autoComplete="new-password"
+                  autoComplete="off"
                   required
                 />
                 <button
